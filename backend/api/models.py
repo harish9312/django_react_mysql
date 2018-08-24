@@ -6,9 +6,9 @@ from django.db import models
 # Create your models here.
 
 class User(models.Model):
-    userName = models.CharField(max_length = 30)
+    userName = models.CharField(max_length = 30, primary_key=True)
     password = models.CharField(max_length = 30)
-    email = models.CharField(max_length = 30)
+    email = models.CharField(max_length = 30, primary_key=True)
     phoneNo = models.CharField(max_length = 30)
 
     class Meta:
